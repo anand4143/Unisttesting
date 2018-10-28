@@ -1,0 +1,42 @@
+<div class="stDetails">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="stDetailsTable">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Firstname</th>
+                <th>Contact Number</th>
+                <th>Email</th>
+                <th>Contact Preference</th>
+                <th>age</th>
+                <th>Gender</th>
+                <th>Department ID</th>
+                <th>DOB</th>
+                <th>Image</th>
+                <th>Active</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of studentList; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{student.fullname}}</td>
+                <td>{{student.contactNumber}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.contactPreference}}</td>
+                <td>{{student.age}}</td>
+                <td>{{student.gender}}</td>
+                <td>{{student.department_id}}</td>
+                <td>{{student.DOB}}</td>
+                <td>{{student.profile_image}}</td>
+                <td>{{student.isActive}}</td>
+               
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</div>
