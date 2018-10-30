@@ -6,8 +6,7 @@ export class Student{
     email:string;
     age:number;
     gender:string;
-    department_id:number;
-   
+    department_id:number;   
     profile_image:string;
     isActive:string;
 
